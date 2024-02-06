@@ -35,8 +35,8 @@ const RandomColor = () => {
             <div style={{ backgroundColor: color, margin: '1rem' }} className='center1-section' >
                 <h2 className='color' onClick={() => copyColor()} >{color}</h2>
                 <div>
-                    <button onClick={() => handleColorHex()} >Generate Random Color</button>
-                    <button onClick={() => handleColorRgb()} >Generate Random Color</button>
+                    <button className='btn'  onClick={() => handleColorHex()} >Generate Random Color</button>
+                    <button className='btn' onClick={() => handleColorRgb()} >Generate Random Color</button>
                 </div>
             </div>
         </>

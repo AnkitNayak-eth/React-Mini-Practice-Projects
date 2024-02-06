@@ -3,15 +3,16 @@ import { ThreeBG } from './components/3D/three';
 import { Canvas } from '@react-three/fiber';
 import ThreeSTAR from './components/3D/threeSTAR';
 import Counter from './components/Counter/Counter';
-import Accordion  from './components/accordion/Accordion';
+import Accordion from './components/accordion/Accordion';
 import RandomColor from './components/random-color/RandomColor';
+import Header from './homepage/header/header';
 
 
 
 function App() {
   return (
     <div >
-      <h1 style={{textAlign:'center', color:'white', margin:'3rem'}} >react - mini - practice - projects</h1>
+      {/* <h1 style={{ textAlign: 'center', color: 'white', margin: '3rem' }} >react - mini - practice - projects</h1>
       <div >
         <ThreeSTAR />
         <Canvas style={{ position: "absolute", top: 0, left: 0, marginTop: "8rem", height: "380px" }}>
@@ -24,7 +25,8 @@ function App() {
       </div>
       <div >
         <Counter />
-      </div>
+      </div> */}
+      <Header/>
     </div>
   );
 }

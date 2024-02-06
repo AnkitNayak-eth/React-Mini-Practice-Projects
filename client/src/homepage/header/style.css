@@ -1,0 +1,136 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Audiowide', sans-serif;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Audiowide', sans-serif;
+}
+
+li {
+    margin: 0.5rem;
+    cursor: pointer;
+
+}
+
+li:hover {
+    transform: translateY(2px);
+    color: greenyellow;
+}
+
+li:active {
+    color: greenyellow;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 10rem;
+
+}
+
+.nav {
+    padding: 0 10rem;
+}
+
+.open {
+    display: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .link {
+        display: none;
+    }
+
+    .nav {
+        padding: 2rem 2rem;
+    }
+
+    .open {
+        display: block;
+        scale: 1.5;
+    }
+
+    .link {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #1D4354;
+        transition: 1s;
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile {
+        transform: translateY(100vh);
+    }
+}
+
+@media (max-width: 767px) {
+    .open {
+        display: block;
+        scale: 1.5;
+    }
+
+
+    .link {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #1D4354;
+        transition: 1s;
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile {
+        transform: translateY(100vh);
+    }
+
+    .search {
+        visibility: hidden;
+    }
+
+}

@@ -16,9 +16,9 @@ const Counter = () => {
     };
     return (
         <div className='counter'>
-            {toggle ? <h2>COUNTER:{count} </h2> : <h2 style={{ color: "red" }} >COUNTER:{count} </h2>}
+            {toggle ? <h2 className='h2tag' >COUNTER:{count} </h2> : <h2 className='h2tag' style={{ color: "red" }} >COUNTER:{count} </h2>}
             <div>
-                <button onClick={clickAdd} className='btn' >ADD</button>
+                <button  onClick={clickAdd} className='btn' >ADD</button>
                 <button onClick={clickRemove} className='btn'>REMOVE</button>
             </div>
         </div>
