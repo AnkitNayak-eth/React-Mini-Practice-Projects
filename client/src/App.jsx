@@ -6,6 +6,7 @@ import Counter from './components/Counter/Counter';
 import Accordion from './components/accordion/Accordion';
 import RandomColor from './components/random-color/RandomColor';
 import Header from './homepage/header/header';
+import Body from './homepage/body/body';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Counter />
       </div> */}
       <Header/>
+      <Body/>
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.body-sec {
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 65% 100%, hsla(240, 61%, 28%, 0.54) 0px, transparent 50%),
+        radial-gradient(at 79% 55%, hsla(289, 53%, 19%, 0.49) 0px, transparent 50%),
+        radial-gradient(at 100% 1%, hsla(240, 61%, 28%, 0.54) 0px, transparent 50%);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-title {
+    width: 50%;
+    line-height: 4rem;
+    margin: 3rem;
+    
+}
+
+
+span {
+    font-size: 5rem;
+}
+
+span:hover {
+    transform: translateY(2px);
+    color: greenyellow;
+    text-shadow: -4px 4px 10px rgba(255, 255, 255, 1);
+}
+
+.hero {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}

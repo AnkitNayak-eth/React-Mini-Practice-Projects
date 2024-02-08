@@ -55,7 +55,8 @@ const Header = () => {
         navRef.current.classList.toggle('mobile');
     }
     return (
-        <AppBar position="static" style={{ backgroundColor: "#1D4354" }}>
+        <div>
+            <AppBar position="static" color='transparent' elevation={0}>
             <div className='nav' >
                 <Toolbar  >
                     <img className='image' src={Logo} alt="" />
@@ -96,6 +97,7 @@ const Header = () => {
                 </Toolbar>
             </div>
         </AppBar>
+        </div>
     );
 };
 
