@@ -23,11 +23,11 @@ li {
 
 li:hover {
     transform: translateY(2px);
-    color: greenyellow;
+    color: rgb(0, 42, 255);
 }
 
 li:active {
-    color: greenyellow;
+    color: rgb(0, 42, 255);
 }
 
 .link {
@@ -91,6 +91,7 @@ li:active {
     .menu {
         display: flex;
         flex-direction: column;
+        
     }
 
     .mobile {
@@ -102,6 +103,8 @@ li:active {
     .open {
         display: block;
         scale: 1.5;
+        z-index: 1;
+
     }
 
 
@@ -119,15 +122,19 @@ li:active {
         background-color: #1D4354;
         transition: 1s;
         font-size: 2rem;
+        z-index: 1;
     }
 
     .menu {
         display: flex;
         flex-direction: column;
+        z-index: 1;
+
     }
 
     .mobile {
         transform: translateY(100vh);
+        z-index: 1;
     }
 
     .search {

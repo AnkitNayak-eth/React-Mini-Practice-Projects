@@ -1,9 +1,8 @@
 .body-sec {
-    background-color: hsla(0, 0%, 0%, 1);
-    background-image:
-        radial-gradient(at 65% 100%, hsla(240, 61%, 28%, 0.54) 0px, transparent 50%),
-        radial-gradient(at 79% 55%, hsla(289, 53%, 19%, 0.49) 0px, transparent 50%),
-        radial-gradient(at 100% 1%, hsla(240, 61%, 28%, 0.54) 0px, transparent 50%);
+    background: radial-gradient(circle, transparent 20%, #06040f 20%, #06040f 80%, transparent 80%, transparent) 0% 0% / 200px 200px, radial-gradient(circle, transparent 20%, #06040f 20%, #06040f 80%, transparent 80%, transparent) 100px 100px / 200px 200px, linear-gradient(#1e00ff 0.5px, transparent 0.5px) 0px -0.25px / 100px 100px, linear-gradient(90deg, #1e00ff 0.5px, #06040f 0.5px) -0.25px 0px / 100px 100px #06040f;
+    background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+    background-color: #06040f;
+
     width: 100%;
     height: 100vh;
     color: white;
@@ -16,7 +15,7 @@
     width: 50%;
     line-height: 4rem;
     margin: 3rem;
-    
+
 }
 
 
@@ -26,8 +25,7 @@ span {
 
 span:hover {
     transform: translateY(2px);
-    color: greenyellow;
-    text-shadow: -4px 4px 10px rgba(255, 255, 255, 1);
+    text-shadow: -2px 2px 2px rgb(0, 38, 255);
 }
 
 .hero {
@@ -35,9 +33,58 @@ span:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 1024px) {
+    .body-title {
+        width: 50%;
+        line-height: 4rem;
+
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    span {
+        font-size: 4rem;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .body-title {
+        width: 90%;
+        line-height: 3rem;
+        font-size: 0.6rem;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    span {
+        font-size: 3rem;
+
+    }
+
+    .anim-img {
+        width: 80%;
+    }
+
 }

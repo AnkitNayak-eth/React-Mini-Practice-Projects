@@ -56,47 +56,49 @@ const Header = () => {
     }
     return (
         <div>
-            <AppBar position="static" color='transparent' elevation={0}>
-            <div className='nav' >
-                <Toolbar  >
-                    <img className='image' src={Logo} alt="" />
-                    <div className='search' >
-                        <Search>
-                            <SearchIconWrapper>
-                                <SearchIcon />
-                            </SearchIconWrapper>
-                            <StyledInputBase
-                                placeholder="Search…"
-                                inputProps={{ 'aria-label': 'search' }}
-                            />
-                        </Search>
-                    </div>
-
-                    <div className='link' ref={navRef} >
-                        <div style={{ margin: '0 1rem' }} >
-                            <ul className='menu'  >
-                                <li>MENU</li>
-                                <li>MENU</li>
-                                <li>MENU</li>
-                                <li>MENU</li>
-                            </ul>
-                        </div>
-                        <div style={{ margin: '0 1rem' }} >
-                            <ul className='menu1'  >
-                                <li><InstagramIcon /></li>
-                                <li><LinkedInIcon /></li>
-                                <li><GitHubIcon /></li>
-                                <li><XIcon /></li>
-                            </ul>
+            <AppBar position="static" style={{
+                backgroundColor: '#06040f'
+            }}>
+                <div className='nav' >
+                    <Toolbar  >
+                        <img className='image' src={Logo} alt="" />
+                        <div className='search' >
+                            <Search>
+                                <SearchIconWrapper>
+                                    <SearchIcon />
+                                </SearchIconWrapper>
+                                <StyledInputBase
+                                    placeholder="Search…"
+                                    inputProps={{ 'aria-label': 'search' }}
+                                />
+                            </Search>
                         </div>
 
-                    </div>
-                    <div className='open' onClick={showNav} >
-                        <IconButton style={{ color: 'white' }}  ><MenuIcon /></IconButton>
-                    </div>
-                </Toolbar>
-            </div>
-        </AppBar>
+                        <div className='link' ref={navRef} >
+                            <div style={{ margin: '0 1rem' }} >
+                                <ul className='menu'  >
+                                    <li>MENU</li>
+                                    <li>MENU</li>
+                                    <li>MENU</li>
+                                    <li>MENU</li>
+                                </ul>
+                            </div>
+                            <div style={{ margin: '0 1rem' }} >
+                                <ul className='menu1'  >
+                                    <li><InstagramIcon /></li>
+                                    <li><LinkedInIcon /></li>
+                                    <li><GitHubIcon /></li>
+                                    <li><XIcon /></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div className='open' onClick={showNav} >
+                            <IconButton style={{ color: 'white' }}  ><MenuIcon /></IconButton>
+                        </div>
+                    </Toolbar>
+                </div>
+            </AppBar>
         </div>
     );
 };
