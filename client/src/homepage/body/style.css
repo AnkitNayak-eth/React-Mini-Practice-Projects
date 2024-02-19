@@ -21,11 +21,16 @@
 
 span {
     font-size: 5rem;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365FA0;
 }
+
+
 
 span:hover {
     transform: translateY(2px);
-    text-shadow: -2px 2px 2px rgb(0, 38, 255);
+    text-shadow: -2px 2px 20px rgb(0, 38, 255);
 }
 
 .hero {

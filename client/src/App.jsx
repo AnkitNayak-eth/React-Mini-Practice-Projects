@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThreeBG } from './components/3D/three';
 import { Canvas } from '@react-three/fiber';
 import ThreeSTAR from './components/3D/threeSTAR';
