@@ -8,12 +8,13 @@ import Accordion from './components/accordion/Accordion';
 import RandomColor from './components/random-color/RandomColor';
 import Header from './homepage/header/header';
 import Body from './homepage/body/body';
+import Footer from './homepage/footer/footer';
 
 
 
 function App() {
   return (
-    <div >
+    <div>
       {/* <h1 style={{ textAlign: 'center', color: 'white', margin: '3rem' }} >react - mini - practice - projects</h1>
       <div >
         <ThreeSTAR />
@@ -28,8 +29,9 @@ function App() {
       <div >
         <Counter />
       </div> */}
-      <Header/>
-      <Body/>
+      <Header />
+      <Body />
+      <Footer />
     </div>
   );
 }
